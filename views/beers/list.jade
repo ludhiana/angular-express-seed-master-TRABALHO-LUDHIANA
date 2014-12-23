@@ -1,0 +1,10 @@
+h2 Listagem de Cervejas
+
+p {{ beers }}
+
+ul
+  li(data-ng-repeat='beer in beers')
+    a(href='/beers/{{beer._id}}')
+      {{ beer.nome }} - {{ beer.preco}}
+    button(data-ng-click='deletar(beer)')
+      | DELETAR

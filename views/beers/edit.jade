@@ -1,0 +1,27 @@
+h2 Cadastro de cervejas
+h3 {{ msg }}
+
+form
+  label
+    span Nome:
+    input(type='text',
+          data-ng-model='beer.nome')
+  label
+    span Categoria:
+    input(type='text',
+          data-ng-model='beer.categoria')
+  label
+    span Preço:
+    input(type='number',
+          data-ng-model='beer.preco')
+  label
+    span Alcool:
+    input(type='number',
+          data-ng-model='beer.alcool')
+  label
+    span Descrição:
+    textarea(data-ng-model='beer.descricao')
+  button.button-large(data-ng-click='save(beer)')
+      SALVAR
+
+

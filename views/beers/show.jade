@@ -1,0 +1,11 @@
+h2 Dados da cerveja
+
+ul
+  li Nome: {{ beer.nome }}
+  li Preço: {{ beer.preco }}
+  li Alcool: {{ beer.alcool }}
+  li Categoria: {{ beer.categoria }}
+  li Descrição: {{ beer.descricao }}
+  li 
+    a(href='/beers/{{beer._id}}/edit') EDITAR
+
